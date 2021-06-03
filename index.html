@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>REICHSTETT MATERIAUX - ECOTEREM | Accueil</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="#accueil" class="logo" id="logo"><img src="./assets/images/logo/logo_couple_4_small.png"
+                alt="logo ecoterem"></a>
+        <div id="toggle"></div>
+
+        <div id="navbar">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#offreService">Offres et Services</a></li>
+                <li><a href="#nousTrouver">Plan d'Accès</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <p class="moto">ELABORONS ENSEMBLE LA NOUVELLE VIE DE VOS MATERIAUX</p>
+
+    </div>
+
+    <div class="slider">
+        <input type="radio" name="slider" checked="checked">
+        <div class="imgBx" id="accueil">
+            <img src="./assets/images/contenu/slide1.jpg" alt="slide 1">
+
+
+        </div>
+        <input type="radio" name="slider">
+        <div class="imgBx">
+            <img src="./assets/images/contenu/slide4.jpg" alt="slide 2">
+
+
+        </div>
+        <input type="radio" name="slider">
+        <div class="imgBx">
+            <img src="./assets/images/contenu/slide5.jpg" alt="slide 3">
+
+
+        </div>
+
+    </div>
+    <div>
+        <section id="offreService">
+            <img src="./assets/png_plaquette/offres_crop.jpg" alt="offres et services">
+            <img src="./assets/png_plaquette/solutions.png" alt="offres et services">
+        </section>
+    </div>
+
+    <section id="nousTrouver">
+
+
+        <img src="./assets/png_plaquette/plan.jpg" alt="plan accès">
+    </section>
+
+
+    <div class="download "><i class="fas fa-file-download"></i><a href="./assets/pdf/Plaquette ECOTEREM RM.pdf"
+            target="_blank">Télécharger Notre plaquette</a></div>
+    <footer>
+        <div class="container" id="contact">
+
+            <div class="sec quicklinks">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#offreService">Offres et Services</a></li>
+                    <li><a href="#nousTrouver">Plan d'Accès</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="sec contact">
+                <h2>Nous Contacter</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span> &nbsp 10, allée de l'Ecoparc rhénan <br> 67550 VENDENHEIM<br>FRANCE</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="tel:0367343421"> 03.67.34.34.21</a><br></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:contact@ecoterem.fr"> contact@ecoterem.fr</a><br></p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Réseaux Sociaux</h2>
+                <ul class="sci">
+
+                    <li><a href="https://www.linkedin.com/company/ecoterem-reichstett-materiaux/?viewAsMember=true"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.facebook.com/Reichstett-Mat%C3%A9riaux-107374584277229" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a></li>
+
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+    </footer>
+    <div class="copyright">
+        <p>Copyright &nbsp <i class="far fa-copyright"></i>&nbsp 2021 Arnaud TERRET. Tous Droits Réservés.</p>
+    </div>
+    <script>
+        const logo = document.getElementById('logo');
+
+        const header = document.getElementById('header');
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+        window.onload = function () {
+            logo.classList.add('loaded');
+        }
+        document.onclick = function (e) {
+            if (e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar') {
+                toggle.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function () {
+            toggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+
+        }
+    </script>
+</body>
+
+</html>
