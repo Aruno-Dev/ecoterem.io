@@ -493,26 +493,7 @@ footer .container .sec h2::before {
         height: 71px;
     }
     
-    /* #toggle::before {
-        width: 40px;
-        height: 4px;
-        transform: translateY(-5px);
-    }
-    
-    #toggle::after {
-        width: 40px;
-        height: 4px;
-        transform: translateY(5px);
-        transition: 0.2s;
-    }
-    
-    #toggle.active::before {
-        transform: translateY(0px) rotate(45deg);
-    }
-    
-    #toggle.active::after {
-        transform: translateY(0px) rotate(-45deg);
-    } */
+  
     header{
         height:71px;
     }
@@ -539,6 +520,10 @@ footer .container .sec h2::before {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .wrapper{
+        top: 71px;
     }
 
     .moto {
