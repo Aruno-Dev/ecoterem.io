@@ -513,7 +513,7 @@ footer .container .sec h2::before {
     }
 
     #navbar.active {
-        height: calc(100vh - 140px);
+        height: calc(100vh - 145px);
         bottom: 0;
         width: 100%;
     }
@@ -538,7 +538,7 @@ footer .container .sec h2::before {
     .download {
         width: 30px;
         height: 30px;
-        top: 150px;
+        top: 120px;
         left: 25px;
         padding: 5px;
         z-index:1901;
@@ -546,7 +546,7 @@ footer .container .sec h2::before {
 
     .download a {
         left: 25px;
-        top: 160px;
+        top: 130px;
         font-size: 12px;
     }
 
