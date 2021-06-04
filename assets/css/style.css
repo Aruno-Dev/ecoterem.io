@@ -114,6 +114,7 @@ h1 {
 
 #navbar.active {
     width: 660px;
+    z-index:20000;
 }
 
 #navbar ul {
