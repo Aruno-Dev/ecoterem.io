@@ -50,7 +50,7 @@ h1 {
 }
 
 .loaded {
-    width: 600px;
+    width: 250px;
     opacity: 1;
 }
 
@@ -258,7 +258,7 @@ section {
 }
 
 #nousTrouver img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
