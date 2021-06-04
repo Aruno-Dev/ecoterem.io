@@ -321,8 +321,8 @@ footer {
     padding: 50px;
     background: rgb(11, 61, 144);
     color: #fff;
-    
-    
+
+
 }
 
 footer .container {
@@ -330,7 +330,7 @@ footer .container {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-gap: 20px;
-    
+
 }
 
 footer .container .sec h2 {
@@ -358,7 +358,7 @@ footer .container .sec h2::before {
 
 .sci li {
     list-style: none;
-    
+
 }
 
 .sci li a {
@@ -375,7 +375,7 @@ footer .container .sec h2::before {
     font-weight: 300;
 }
 
-.sci li a:hover  {
+.sci li a:hover {
     background: rgb(46, 106, 202);
     color: #fff;
 }
@@ -406,7 +406,7 @@ footer .container .sec h2::before {
     display: inline-block;
     width: 185px;
     transition: 0.3s;
-    font-weight:300;
+    font-weight: 300;
 }
 
 .quicklinks li a:hover {
@@ -440,17 +440,17 @@ footer .container .sec h2::before {
     font-weight: 300;
 }
 
-.info li span{
+.info li span {
     width: fit-content;
-    padding:5px;
+    padding: 5px;
     font-weight: 300;
-    transition:0.3s;
+    transition: 0.3s;
 }
 
-.info li span:hover{
-    
+.info li span:hover {
+
     font-weight: 400;
-    letter-spacing:1px;
+    letter-spacing: 1px;
     background: rgb(46, 106, 202);
 }
 
@@ -459,7 +459,7 @@ footer .container .sec h2::before {
     background: rgb(46, 106, 202);
     color: rgb(255, 255, 255);
     font-weight: 400;
-    letter-spacing:2px;
+    letter-spacing: 2px;
 }
 
 .info li:hover span:nth-child(1) {
@@ -480,24 +480,25 @@ footer .container .sec h2::before {
 /*-----------------------------RESPONSIVE------------------------------*/
 
 @media only screen and (max-width: 600px) {
-*{
-    overflow: auto;
-}
+    * {
+        overflow: auto;
+    }
 
-.loaded img{
-    width:150px;
-    height:auto;
-}
+    .loaded img {
+        width: 150px;
+        height: auto;
+    }
+
     #toggle {
         width: 71px;
         height: 71px;
     }
-    
-  
-    header{
-        height:71px;
+
+
+    header {
+        height: 71px;
     }
-    
+
     #navbar {
         position: fixed;
         bottom: -100%;
@@ -522,7 +523,7 @@ footer .container .sec h2::before {
         align-items: center;
     }
 
-    .wrapper{
+    .wrapper {
         top: 71px;
     }
 
@@ -600,7 +601,13 @@ footer .container .sec h2::before {
         margin-bottom: 2px;
     }
 
- 
+    .sci {
+        grid-template-columns: repeat(2, 20px);
+        grid-gap: 10px;
+        margin-left:15px;
+    }
+
+
     .sci li a {
         width: 20px;
         height: 20px;
