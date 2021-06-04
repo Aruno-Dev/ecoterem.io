@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -6,6 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     /* overflow: hidden; */
 }
 
@@ -23,7 +25,7 @@ header {
     width: 100%;
     background-color: #fff;
     border-bottom: 2px solid rgb(11, 61, 144);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     z-index: 2000;
 }
 
@@ -42,11 +44,11 @@ h1 {
 }
 
 .logo img {
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
-    z-index:4000;
+    z-index: 4000;
 }
 
 .loaded {
@@ -234,11 +236,11 @@ section {
 
 .slider input[type="radio"] {
     position: relative;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
     bottom: -30px;
     z-index: 1200;
-    margin: 5px;
+    margin: 10px;
     margin-bottom: 40px;
     outline: none;
     cursor: pointer;
@@ -258,7 +260,7 @@ section {
 }
 
 #nousTrouver img {
-    width: 70%;
+    width: 80%;
     height: auto;
 }
 
@@ -319,6 +321,8 @@ footer {
     padding: 50px;
     background: rgb(11, 61, 144);
     color: #fff;
+    
+    
 }
 
 footer .container {
@@ -326,12 +330,13 @@ footer .container {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-gap: 20px;
+    
 }
 
 footer .container .sec h2 {
     position: relative;
-    font-weight: 500;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 footer .container .sec h2::before {
@@ -353,6 +358,7 @@ footer .container .sec h2::before {
 
 .sci li {
     list-style: none;
+    
 }
 
 .sci li a {
@@ -366,9 +372,10 @@ footer .container .sec h2::before {
     justify-content: center;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 300;
 }
 
-.sci li a:hover {
+.sci li a:hover  {
     background: rgb(46, 106, 202);
     color: #fff;
 }
@@ -397,14 +404,15 @@ footer .container .sec h2::before {
     padding-left: 5px;
     margin-bottom: 10px;
     display: inline-block;
-    width: 115px;
+    width: 185px;
     transition: 0.3s;
+    font-weight:300;
 }
 
 .quicklinks li a:hover {
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 400;
     background: rgb(46, 106, 202);
-
 }
 
 .info {
@@ -425,15 +433,33 @@ footer .container .sec h2::before {
 .info li a {
     color: #fff;
     display: inline-block;
-    width: 185px;
+    width: 220px;
     padding-left: 5px;
     text-decoration: none;
     transition: 0.3s;
+    font-weight: 300;
 }
+
+.info li span{
+    width: fit-content;
+    padding:5px;
+    font-weight: 300;
+    transition:0.3s;
+}
+
+.info li span:hover{
+    
+    font-weight: 400;
+    letter-spacing:1px;
+    background: rgb(46, 106, 202);
+}
+
 
 .info li a:hover {
     background: rgb(46, 106, 202);
     color: rgb(255, 255, 255);
+    font-weight: 400;
+    letter-spacing:2px;
 }
 
 .info li:hover span:nth-child(1) {
@@ -454,16 +480,49 @@ footer .container .sec h2::before {
 /*-----------------------------RESPONSIVE------------------------------*/
 
 @media only screen and (max-width: 600px) {
+*{
+    overflow: auto;
+}
 
-    /* * {
-        overflow: auto;
+.loaded img{
+    width:150px;
+    height:auto;
+}
+    #toggle {
+        width: 71px;
+        height: 71px;
+    }
+    
+    /* #toggle::before {
+        width: 40px;
+        height: 4px;
+        transform: translateY(-5px);
+    }
+    
+    #toggle::after {
+        width: 40px;
+        height: 4px;
+        transform: translateY(5px);
+        transition: 0.2s;
+    }
+    
+    #toggle.active::before {
+        transform: translateY(0px) rotate(45deg);
+    }
+    
+    #toggle.active::after {
+        transform: translateY(0px) rotate(-45deg);
     } */
-
+    header{
+        height:71px;
+    }
+    
     #navbar {
         position: fixed;
         bottom: -100%;
         right: 0;
         width: 100%;
+        height: 71px;
         transition: 0.5s;
         display: flex;
         justify-content: center;
