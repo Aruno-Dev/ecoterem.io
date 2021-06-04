@@ -513,7 +513,7 @@ footer .container .sec h2::before {
     }
 
     #navbar.active {
-        height: calc(100vh - 171px);
+        height: calc(100vh - 191px);
         bottom: 0;
         width: 100%;
     }
