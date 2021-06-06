@@ -513,7 +513,7 @@ footer .container .sec h2::before {
     }
 
     #navbar.active {
-        height: calc(100vh - 145px);
+        height: calc(100vh - 125px);
         bottom: 0;
         width: 100%;
     }
@@ -538,7 +538,7 @@ footer .container .sec h2::before {
     .download {
         width: 30px;
         height: 30px;
-        top: 120px;
+        top: 130px;
         left: 25px;
         padding: 5px;
         z-index:1901;
@@ -546,7 +546,7 @@ footer .container .sec h2::before {
 
     .download a {
         left: 25px;
-        top: 130px;
+        top: 140px;
         font-size: 12px;
     }
 
@@ -575,7 +575,7 @@ footer .container .sec h2::before {
 
     footer {
         padding: 10px;
-        height: 200px;
+        height: 250px;
     }
 
     footer .container {
@@ -699,7 +699,7 @@ footer .container .sec h2::before {
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1141px) {
+@media only screen and (min-width: 769px) and (max-width: 1765px) {
     #navbar {
         position: fixed;
         bottom: -100%;
