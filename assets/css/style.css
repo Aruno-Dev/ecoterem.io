@@ -576,9 +576,9 @@ footer .container .sec h2::before {
 /*-----------------------------RESPONSIVE------------------------------*/
 
 @media only screen and (max-width: 600px) {
-    /* * {
+    * {
         overflow: auto;
-    } */
+    } 
 
     .loaded img {
         width: 150px;
